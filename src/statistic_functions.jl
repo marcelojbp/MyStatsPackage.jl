@@ -18,14 +18,7 @@ end
 function rse_tstat(a; σ = rse_std(a))
     rse_mean(a)*√length(a)/σ
 end
-# test 1
-rse_sum(1:36)
-# test 2
-rse_mean(-15:17)
-# test 3
-rse_std(1:3)
-# test 4
-rse_tstat(2:3)
+
 
 struct StatResult
     x::Vector
@@ -42,3 +35,6 @@ end
 Base.length(stat::StatResult) = stat.n
 
 
+function printOwner()
+    println("https://github.com/marcelojbp")
+end 
