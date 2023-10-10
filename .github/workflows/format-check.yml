@@ -26,9 +26,9 @@ jobs:
               exit(1)
           end'
 
- -test:
+  -test:
     runs-on: ubuntu-latest
-  steps:
+    steps:
       - uses: actions/checkout@v2
       - uses: julia-actions/setup-julia@v1
         with:
