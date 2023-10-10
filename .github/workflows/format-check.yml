@@ -3,7 +3,7 @@ name: format-check
 on: [push, pull_request]
 
 jobs:
-  -format:
+  format:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -26,7 +26,7 @@ jobs:
               exit(1)
           end'
 
-  -test:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
