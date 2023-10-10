@@ -24,4 +24,13 @@ jobs:
               @error "Some files have not been formatted"
               write(stdout, out)
               exit(1)
-          end'    
+          end'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+  steps:
+      - uses: actions/checkout@v2
+      - uses: julia-actions/setup-julia@v1
+        with:
+          version: '1.9'
+      - uses: julia-actions/julia-runtest@v1    
