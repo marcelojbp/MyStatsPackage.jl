@@ -1,3 +1,9 @@
+"""
+    rse_sum(a)
+
+Returns the sum of the elements of an array.
+
+"""
 function rse_sum(a)
     s = 0
     for i = 1:length(a)
